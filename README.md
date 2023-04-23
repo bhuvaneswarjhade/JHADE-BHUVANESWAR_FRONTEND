@@ -24,8 +24,6 @@ In the SingleListItem component, the isSelected prop which is a boolean. It shou
 isSelected={index === selectedIndex}
 
 
-
-
 3.import React, { useState, useEffect, memo } from 'react';
 import PropTypes from 'prop-types';
 
