@@ -26,13 +26,19 @@ isSelected={index === selectedIndex}
 
 
 
-3. import React, { useState, useEffect, memo } from 'react';
+3.import React, { useState, useEffect, memo } from 'react';
 import PropTypes from 'prop-types';
 
-const SingleListItem = memo(({index,isSelected,onClickHandler,text}) => {
+const SingleListItem = memo(({ 
+    index, 
+    isSelected, 
+    onClickHandler, 
+    text }) => {
   return (
-    <li  style={{ backgroundColor: isSelected ? 'green' : 'red' }}
-        onClick={() => onClickHandler(index)>
+    <li
+      style={{ backgroundColor: isSelected ? 'green' : 'red' }}
+      onClick={() => onClickHandler(index)}
+    >
       {text}
     </li>
   );
